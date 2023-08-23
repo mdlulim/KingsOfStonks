@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Kings of Stonks API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/home": {
+            "get": {
+                "tags": [
+                    "Home"
+                ],
+                "summary": "Kings of stonks",
+                "description": "",
+                "operationId": "fa95dd375607974f5da81342e64d1661",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Provide your name",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "bearerAuth",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    }
+}
