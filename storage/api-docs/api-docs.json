@@ -30,6 +30,38 @@
                     }
                 }
             }
+        },
+        "/api/v4/quote": {
+            "get": {
+                "tags": [
+                    "Home"
+                ],
+                "summary": "Kings of stonks",
+                "description": "",
+                "operationId": "eb30aa90c8c7d73df250a587d700a2b7",
+                "parameters": [
+                    {
+                        "name": "ticker",
+                        "in": "query",
+                        "description": "Provide stock ticker",
+                        "required": true
+                    },
+                    {
+                        "name": "apiKey",
+                        "in": "query",
+                        "description": "Provide Api Key",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/home', [StockController::class, 'index'])->name('home');
+Route::get('/v4/quote', [StockController::class, 'getStock'])->name('Stock');
 
